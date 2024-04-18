@@ -1,4 +1,3 @@
-
 ## ddRAD-seq
 A repository for performing double-digest Restriction Associated DNA sequencing (ddRAD-seq) for reduced representation sequencing.
 
@@ -7,9 +6,9 @@ Double digest restriction-site associated DNA sequencing (ddRAD-seq) involves th
 
 This method allows for reduced representation sequencing, which is a cost-effective alternative to whole genome sequencing. By using ddRAD-seq, we can identify single nucleotide polymorphisms (SNPs) without sequencing the entire genome. This technique provides control over the fraction of the genome sequenced, making it suitable for lower throughput applications. This approach allows for strain-level tracking and population structure analysis, achieving the necessary genetic insights within certain budget and technical constraints.
 
-![ddRAD figure](https://www.researchgate.net/publication/319913210/figure/fig1/AS:616389668778001@1523970157797/Diagrammatic-representation-of-the-ddRADseq-method-the-oligos-adapters-and-final.png)
+![image](https://github.com/KPU-AGC/ddRAD-seq/assets/90236200/953463f5-b1b8-4bf5-8833-319584008db7)
 
-**Figure.** Diagrammatic representation of the ddRAD-seq method[^1].
+**Figure.** General workflow diagram for performing ddRAD-seq [^1].
 
 ## Objective
 To simulate double digestion to identify the optimal pair of enzymes for performing ddRAD-seq on a given reference genome or simulated genome given genome length and GC content.
