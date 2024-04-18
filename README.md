@@ -8,7 +8,7 @@ This method allows for reduced representation sequencing, which is a cost-effect
 
 ![image](https://github.com/KPU-AGC/ddRAD-seq/assets/90236200/953463f5-b1b8-4bf5-8833-319584008db7)
 
-**Figure.** General workflow diagram for performing ddRAD-seq [^1].
+**Figure.** Diagram of ddRAD-seq workflow showing the construction of adapter ligation on double-digested fragments[^1].
 
 ## Objective
 To simulate double digestion to identify the optimal pair of enzymes for performing ddRAD-seq on a given reference genome or simulated genome given genome length and GC content.
