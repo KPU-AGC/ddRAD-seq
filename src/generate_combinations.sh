@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Reading the list from the file into an array
-mapfile -t items < enzyme_list.txt
+mapfile -t items < $1
 
 # Get the number of items in the array
 num_items=${#items[@]}
