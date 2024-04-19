@@ -26,7 +26,7 @@ The following programs and packages should be installed.
 ### 1A. Generating restriction enzyme statistics from a reference genome.
 This method is probably the most reliable. With a very solid reference, this provides consistent cut sites and accurate prediction of restriction fragment loci.
 1. (recommended) Put the reference genome in the directory provided.
-2. Minimally, run the following command to generate statistics for a single run of double digestion of specific enzymes. 
+2. Run the following command to generate statistics for a single run of double digestion of specific enzymes. 
 ```bash
 REF="/path/to/reference_genome.fa"
 ENZYME_1="EcoRI"
@@ -40,7 +40,7 @@ julia src/jl-simRAD.jl use-ref ${REF} ${ENZYME_1} ${ENZYME_2} -m 300 -M 600
 ### 1B. Generating restriction enzyme statistics without a reference genome.
 If no reference genome is available, this program has the capability to simulate a genome with a given length and GC content. Compared to a stable reference genome, the results of this method are very inconsistent and should be run multiple times to be more accurate to the mean number of fragments produced.
 
-1. Minimally, run the following command to generate statistics for a single run of double digestion of specific enzymes, similar to above.
+1. Run the following command to generate statistics for a single run of double digestion of specific enzymes, similar to above.
 ```bash
 GENOME_SIZE=46600000
 GC_CONTENT=46
