@@ -59,15 +59,16 @@ To efficiently accomplish the goal of checking enzyme combinations, this program
 # 1. For use with a reference genome:
 REF="/path/to/reference_genome.fa"
 ENZYMES_LIST="/path/to/enzymes_list.txt"
-./src/generate_combinations.sh | parallel --colsep '\t' --progress \
+./src/generate_combinations.sh ${ENZYMES_LIST} | parallel --colsep '\t' --progress \
     'julia src/jl-simRAD.jl use-ref '"${REF}"' {1} {2} > output/{1}-{2}.csv'
 
 # 2. For use with a simulated genome of 46.6 Mb, GC content of 46%, and with 10 repetitions:
 GENOME_SIZE=46600000
 GC_CONTENT=46
+ENZYMES_LIST="/path/to/enzymes_list.txt"
 for i in $(seq 1 10); do
     mkdir -p gen_output/${i}
-    ./src/generate_combinations.sh | parallel --colsep '\t' --progress \
+    ./src/generate_combinations.sh ${ENZYMES_LIST} | parallel --colsep '\t' --progress \
         'julia src/jl-simRAD.jl no-ref '"${GENOME_SIZE}"' '"${GC_CONTENT}"' {1} {2} > gen_output/'"${i}"'/{1}-{2}.csv'
 done
 ```
